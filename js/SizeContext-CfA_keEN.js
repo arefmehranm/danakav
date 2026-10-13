@@ -1,0 +1,1 @@
+import{J as e,g as t,gt as n,k as r}from"./runtime-core.esm-bundler--azUAgAR.js";var i=Symbol(`SizeContext`),a=()=>e(i,t(()=>void 0)),o=r((e,{slots:r})=>{let o=a(),s=t(()=>e?.size||o.value);return n(i,s),()=>r?.default?.()},{props:{size:{type:[String,null],required:!1}}});function s(e){n(i,e)}export{a as n,s as r,o as t};

@@ -1,0 +1,1 @@
+import{g as e}from"./runtime-core.esm-bundler--azUAgAR.js";function t(e){return e===`horizontal`||e===`vertical`}function n(n,r,i){let a=e(()=>{let e=t(n?.value),a;return a=e?n.value:typeof r?.value==`boolean`?r?.value?`vertical`:`horizontal`:t(i?.value)?i.value:`horizontal`,[a,a===`vertical`]});return[e(()=>a.value[0]),e(()=>a.value[1])]}export{n as t};

@@ -1,0 +1,1 @@
+var e=`/auth/login`,t=[{label:`简体中文`,value:`zh_CN`},{label:`English`,value:`en_US`},{label:`فارسی`,value:`fa_IR`}];function n(e){return e.map(e=>({...e}))}var r=n(t),i=[];function a(e){return i.push(e),e(n(r)),()=>{let t=i.indexOf(e);t!==-1&&i.splice(t,1)}}export{a as n,e as t};

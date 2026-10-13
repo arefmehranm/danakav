@@ -1,0 +1,1 @@
+var e=`Audit Logs`,t={createdTime:`Action time`,userName:`Action user`,entityType:`Entity type`,entityName:`Entity name`,actionType:`Action type`,actionStatus:`Status`,failureDetails:`Failure details`},n={filter:{actionTypes:`Action types`},detail:{title:`Audit log details`}},r={menu:e,fields:t,features:n};export{r as default,n as features,t as fields,e as menu};

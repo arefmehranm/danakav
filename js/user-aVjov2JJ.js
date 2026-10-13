@@ -1,0 +1,1 @@
+import{n as e}from"./pinia-CwuDSdgy.js";var t=e(`core-user`,{actions:{setUserInfo(e){this.userInfo=e;let t=e?.roles??[];this.setUserRoles(t)},setUserRoles(e){this.userRoles=e}},state:()=>({userInfo:null,userRoles:[]})});export{t};

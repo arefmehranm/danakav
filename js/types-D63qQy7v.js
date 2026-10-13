@@ -1,0 +1,1 @@
+var e={normal:{color:`#38bdf8`,icon:`lucide:activity`,label:`رفتار معمول`},abnormal:{color:`#ef4444`,icon:`lucide:alert-octagon`,label:`رفتار ناهنجار`},healthy:{color:`#00c07f`,icon:`lucide:check-circle-2`,label:`رفتار سالم`},maintenance:{color:`#f59e0b`,icon:`lucide:wrench`,label:`رفتار تجهیز نیاز به سرویس و تعمیر`}};export{e as t};

@@ -1,0 +1,1 @@
+import{t as e}from"./preferences-PyAZFAxo.js";var{getPreferences:t,getCustomPreferences:n,getInitialCustomPreferences:r,getPreferencesExtension:i,updatePreferences:a,updateCustomPreferences:o,resetPreferences:s,clearCache:c,initPreferences:l}=e,u=t();export{o as a,s as i,l as n,a as o,u as r,c as t};

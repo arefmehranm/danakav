@@ -1,0 +1,1 @@
+function e(e,t){let n=e;for(let e=0;e<t.length;e+=1){if(n==null)return;n=n[t[e]]}return n}export{e as t};

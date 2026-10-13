@@ -1,0 +1,1 @@
+function e(e){let t=Object.getPrototypeOf(e);Object.getOwnPropertyNames(t).forEach(n=>{let r=Object.getOwnPropertyDescriptor(t,n),i=e[n];typeof i==`function`&&n!==`constructor`&&r&&!r.get&&!r.set&&(e[n]=i.bind(e))})}export{e as t};

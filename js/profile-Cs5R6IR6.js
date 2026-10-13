@@ -1,0 +1,1 @@
+var e=`کلمه عبور را به روز کنید`,t=`بروزرسانی پروفایل پایه`,n={updatePassword:e,updateBasicProfile:t};export{n as default,t as updateBasicProfile,e as updatePassword};

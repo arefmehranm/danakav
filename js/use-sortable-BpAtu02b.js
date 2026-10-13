@@ -1,0 +1,1 @@
+import{t as e}from"./preload-helper-Czpn1I53.js";function t(t,n={}){return{initializeSortable:async()=>(await e(()=>import(`./sortable.complete.esm-C6b7ismL.js`),[]))?.default?.create?.(t,{animation:300,delay:400,delayOnTouchOnly:!0,...n})}}export{t};

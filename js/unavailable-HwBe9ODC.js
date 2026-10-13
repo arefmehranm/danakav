@@ -1,0 +1,1 @@
+import{D as e,On as t,k as n,mt as r,qt as i,v as a}from"./runtime-core.esm-bundler--azUAgAR.js";import{t as o}from"./page-D_1lCbAq.js";import{t as s}from"./result-DEQ_xJ90.js";var c=n({__name:`unavailable`,setup(n){return(n,c)=>(r(),a(t(o),null,{default:i(()=>[e(t(s),{status:`info`,title:`登录成功`,"sub-title":`当前阶段已迁移系统管理员的租户管理。此账号的业务页面尚未迁移。`})]),_:1}))}});export{c as default};

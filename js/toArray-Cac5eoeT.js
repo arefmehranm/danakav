@@ -1,0 +1,1 @@
+import{Z as e,o as t}from"./runtime-core.esm-bundler--azUAgAR.js";function n(n){return e(n)&&n.type===t}function r(e,t={}){let i=[];Array.isArray(e)||(e=[e]);for(let a of e)a==null&&!t.keepEmpty||(Array.isArray(a)?i=i.concat(r(a,t)):n(a)&&a.children?i=i.concat(r(a.children,t)):i.push(a));return i}export{r as t};

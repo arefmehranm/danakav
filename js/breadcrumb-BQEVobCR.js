@@ -1,0 +1,1 @@
+import{n as e}from"./pinia-CwuDSdgy.js";var t=e(`core-breadcrumb`,{state:()=>({titles:new Map}),actions:{setTitle(e,t){this.titles.set(e,t)},resetTitle(e){this.titles.delete(e)}}});export{t};

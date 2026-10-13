@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-hePW80VL.js";import{On as t,k as n,mt as r,v as i}from"./runtime-core.esm-bundler--azUAgAR.js";import{t as a}from"./fallback-DWU18Bh9.js";var o=n({name:`Fallback403Demo`,__name:`forbidden`,setup(e){return(e,n)=>(r(),i(t(a),{status:`403`}))}}),s=e({default:()=>c}),c=o;export{s as n,c as t};

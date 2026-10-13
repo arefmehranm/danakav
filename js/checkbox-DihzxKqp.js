@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-hePW80VL.js";import{n as t,t as n}from"./Group-zo71s_MW.js";var r=e({CheckboxGroup:()=>n,default:()=>i});t.install=e=>{e.component(t.name,t),e.component(n.name,n)};var i=t;export{r as n,i as t};

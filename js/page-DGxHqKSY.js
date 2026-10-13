@@ -1,0 +1,1 @@
+var e={login:`ورود`,register:`ثبت`,codeLogin:`کد ورود`,qrcodeLogin:`کد QR ورود`,forgetPassword:`رمز عبور رو فراموش کن`,profile:`پروفایل`},t={title:`داشبورد`,analytics:`تحلیل`,workspace:`فضای کاری`},n={auth:e,dashboard:t};export{e as auth,t as dashboard,n as default};

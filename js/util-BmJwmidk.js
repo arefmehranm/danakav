@@ -1,0 +1,1 @@
+function e(){return{"@media (prefers-reduced-motion: reduce)":{"&, &::before, &::after":{transition:`none`,animation:`none`}}}}function t(){return{"@media (prefers-reduced-motion: reduce)":{transition:`none`,animation:`none`}}}export{e as n,t};
