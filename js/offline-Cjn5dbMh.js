@@ -1,0 +1,1 @@
+import{On as e,k as t,mt as n,v as r}from"./runtime-core.esm-bundler--azUAgAR.js";import{t as i}from"./fallback-DWU18Bh9.js";var a=t({name:`FallbackOfflineDemo`,__name:`offline`,setup(t){return(t,a)=>(n(),r(e(i),{status:`offline`}))}});export{a as default};

@@ -1,0 +1,1 @@
+import{g as e}from"./runtime-core.esm-bundler--azUAgAR.js";import{w as t}from"./useMergeSemantic-CDK2oPFP.js";function n(n){let[,,,,r]=t();return e(()=>r?.value?`${n.value}-css-var`:``)}export{n as t};

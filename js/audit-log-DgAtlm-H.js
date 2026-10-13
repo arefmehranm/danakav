@@ -1,0 +1,1 @@
+var e=`审计日志`,t={createdTime:`操作时间`,userName:`操作用户`,entityType:`实体类型`,entityName:`实体名称`,actionType:`操作类型`,actionStatus:`状态`,failureDetails:`失败详情`},n={filter:{actionTypes:`操作类型`},detail:{title:`审计日志详情`}},r={menu:e,fields:t,features:n};export{r as default,n as features,t as fields,e as menu};

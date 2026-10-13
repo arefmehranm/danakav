@@ -1,0 +1,1 @@
+textarea[data-v-1fff13b2]{--ring:var(--primary)}textarea[data-v-1fff13b2]:not(:disabled):hover{border-color:hsl(var(--ring))}textarea[aria-invalid=true][data-v-1fff13b2]{--ring:var(--destructive);border-color:hsl(var(--destructive))}

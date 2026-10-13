@@ -1,0 +1,1 @@
+import{g as e,vn as t}from"./runtime-core.esm-bundler--azUAgAR.js";import{f as n}from"./Teleport-C6uNl7vw.js";function r(r){let i=n({nonce:t()});return e(()=>r?.value||i.nonce?.value)}export{r as t};

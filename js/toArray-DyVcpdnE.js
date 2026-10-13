@@ -1,0 +1,1 @@
+import{t as e}from"./isArrayLike-BS_PKJs1.js";function t(e){return e instanceof Map}function n(e){return e instanceof Set}function r(e){return t(e)}function i(e){return n(e)}function a(t){return t==null?[]:e(t)||r(t)||i(t)?Array.from(t):typeof t==`object`?Object.values(t):[]}export{a as t};

@@ -1,0 +1,1 @@
+async function e(e){let t=[];for(let n=0;;n++){let r=await e({page:n,pageSize:500});if(t.push(...r.data),!r.hasNext)return t;if(r.data.length===0)throw Error(`Empty page returned with hasNext=true`)}}export{e as t};

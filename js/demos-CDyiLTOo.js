@@ -1,0 +1,1 @@
+var e=`نمایش`,t=`بعدی`,n={title:`پروژه`,about:`در مورد`,document:`سند`,antdv:`نسخه طراحی مورچه`,"antdv-next":`Antdv نسخه بعدی`,"naive-ui":`نسخه ی ساده ی UI`,"element-plus":`نسخه ی عنصر پلاس`,tdesign:`نسخه طراحی`},r={title:e,antd:t,vben:n};export{t as antd,r as default,e as title,n as vben};

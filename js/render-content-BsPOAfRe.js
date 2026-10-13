@@ -1,0 +1,2 @@
+import{B as e,Kn as t,Vn as n,k as r,zn as i}from"./runtime-core.esm-bundler--azUAgAR.js";var a=r({name:`RenderContent`,props:{content:{default:void 0,type:[Object,String,Function]},renderBr:{default:!1,type:Boolean}},setup(r,{attrs:a,slots:o}){return()=>{if(!r.content)return null;if(!((n(r.content)||i(r.content))&&r.content!==null)){if(r.renderBr&&t(r.content)){let t=r.content.split(`
+`),n=[];for(let[r,i]of t.entries())n.push(e(`p`,{key:r},i));return n}return r.content}return e(r.content,{...a,props:{...r,...a}},o)}}});export{a as t};

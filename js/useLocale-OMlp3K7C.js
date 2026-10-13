@@ -1,0 +1,1 @@
+import{g as e,vn as t}from"./runtime-core.esm-bundler--azUAgAR.js";import{t as n}from"./en_US-BLud34d9.js";import{r}from"./locale-CE25EU5b.js";function i(i,a){let{locale:o}=r()??{locale:t(n)};return[e(()=>{let e=a||n[i],t=o.value?.[i]??{};return{...typeof e==`function`?e():e,...t||{}}}),e(()=>{let e=o.value?.locale;return o.value?.exist&&!e?n.locale:e})]}export{i as t};

@@ -1,0 +1,1 @@
+import{k as e,mt as t,v as n}from"./runtime-core.esm-bundler--azUAgAR.js";import{t as r}from"./list-BjBEyIdS.js";var i=e({__name:`index`,setup(e){return(e,i)=>(t(),n(r))}});export{i as default};

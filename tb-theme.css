@@ -1,0 +1,186 @@
+/*
+ * ThingsBoard Angular UI (embedded under /_tb/ for the dashboard viewer) ships a
+ * blue primary (#305680). Re-map it to the Vue app's green primary (#00c07f) so
+ * the dashboard looks consistent with the rest of the interface.
+ *
+ * The Angular theme is compiled into M3 CSS custom properties declared on
+ * `.tb-default`/`.tb-dark` as well as on higher-specificity component selectors
+ * such as `.tb-default .mat-mdc-fab.mat-primary`. Declaring the values with
+ * `!important` on the root theme elements overrides all of them without having
+ * to repeat every compiled selector.
+ *
+ * This file also makes the embedded dashboard Persian/RTL: it loads the Vazirmatn
+ * font (the same one the Vue shell uses, so weights match) and flips the layout
+ * to right-to-left. The `dir`/`lang` attributes themselves are set by
+ * `viewer.vue#injectTheme` so Material's CDK Bidi picks them up.
+ */
+/* Self-hosted Vazirmatn (SIL OFL 1.1); the font files live under /fonts/. */
+@import url('/fonts/vazirmatn.css');
+
+/* Vazirmatn matches the surrounding Vue UI; the Angular default is Roboto.
+ * ThingsBoard also writes `font-family: Roboto` as an inline style on many
+ * elements (widget titles, legends, chart labels), and no concrete selector
+ * reaches those, so a universal rule is required to win over the inline value.
+ *
+ * The icon fonts MUST be excluded: their glyphs are ligatures (`arrow_forward`,
+ * `menu`, ...) that only resolve inside the icon font. Forcing Vazirmatn on
+ * `.material-icons`/`.fa` makes the browser render the ligature text instead of
+ * an icon (the regression this rule used to cause). Exclude them first, then
+ * pin them back to their own families. */
+*:not(.material-icons):not(.mat-icon):not(mat-icon):not(.material-symbols-outlined):not(.material-symbols-rounded):not(.material-symbols-sharp):not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not(.fa-solid):not(.fa-regular):not(.fa-brands):not(.fa-light):not(.fa-thin):not(.fa-duotone) {
+  font-family:
+    Vazirmatn, 'Noto Sans Arabic', 'Segoe UI', Tahoma, -apple-system,
+    BlinkMacSystemFont, sans-serif !important;
+}
+
+.material-icons,
+.mat-icon,
+mat-icon,
+.material-symbols-outlined,
+.material-symbols-rounded,
+.material-symbols-sharp {
+  font-family: 'Material Icons' !important;
+}
+
+.fa,
+.fas,
+.far,
+.fal,
+.fab,
+.fa-solid,
+.fa-regular,
+.fa-brands,
+.fa-light,
+.fa-thin,
+.fa-duotone {
+  font-family: FontAwesome !important;
+}
+
+/* Flip the whole Angular UI to RTL. Direction is inherited by CDK overlays
+ * (dialogs, menus, datepickers) because they attach under <body>. */
+html[dir='rtl'],
+html[dir='rtl'] body {
+  direction: rtl;
+}
+
+html[dir='rtl'] body {
+  text-align: right;
+}
+
+/* Material inputs keep a physical text-align; align them with RTL text. */
+html[dir='rtl'] .mat-mdc-input-element,
+html[dir='rtl'] input,
+html[dir='rtl'] textarea {
+  text-align: right;
+}
+
+html.tb-default,
+html.tb-dark,
+body.tb-default,
+body.tb-dark,
+.tb-default .mat-primary,
+.tb-dark .mat-primary {
+  /* Primary (green) and a dark green for text/icons on green surfaces. */
+  --tb-primary: #00c07f;
+  --tb-primary-foreground: #053b29;
+
+  --mat-option-selected-state-label-text-color: #00c07f !important;
+  --mdc-filled-text-field-caret-color: #00c07f !important;
+  --mdc-filled-text-field-focus-active-indicator-color: #00c07f !important;
+  --mdc-filled-text-field-focus-label-text-color: rgba(0, 192, 127, 0.87) !important;
+  --mdc-outlined-text-field-caret-color: #00c07f !important;
+  --mdc-outlined-text-field-focus-outline-color: #00c07f !important;
+  --mdc-outlined-text-field-focus-label-text-color: rgba(0, 192, 127, 0.87) !important;
+  --mdc-slider-handle-color: #00c07f !important;
+  --mdc-slider-focus-handle-color: #00c07f !important;
+  --mdc-slider-hover-handle-color: #00c07f !important;
+  --mdc-slider-active-track-color: #00c07f !important;
+  --mdc-slider-inactive-track-color: #00c07f !important;
+  --mdc-slider-with-tick-marks-inactive-container-color: #00c07f !important;
+  --mdc-slider-with-tick-marks-active-container-color: #053b29 !important;
+  --mat-slider-ripple-color: #00c07f !important;
+  --mdc-circular-progress-active-indicator-color: #00c07f !important;
+  --mat-badge-background-color: #00c07f !important;
+  --mat-badge-text-color: #053b29 !important;
+  --mat-datepicker-calendar-date-selected-state-background-color: #00c07f !important;
+  --mat-datepicker-calendar-date-selected-state-text-color: #053b29 !important;
+  --mat-datepicker-toggle-active-state-icon-color: #00c07f !important;
+  --mat-datepicker-calendar-date-focus-state-background-color: rgba(0, 192, 127, 0.3) !important;
+  --mat-datepicker-calendar-date-hover-state-background-color: rgba(0, 192, 127, 0.3) !important;
+  --mat-datepicker-calendar-date-in-range-state-background-color: rgba(0, 192, 127, 0.2) !important;
+  --mat-stepper-header-selected-state-icon-background-color: #00c07f !important;
+  --mat-stepper-header-done-state-icon-background-color: #00c07f !important;
+  --mat-stepper-header-edit-state-icon-background-color: #00c07f !important;
+  --mat-full-pseudo-checkbox-selected-icon-color: #00c07f !important;
+  --mat-minimal-pseudo-checkbox-selected-checkmark-color: #00c07f !important;
+  --mdc-linear-progress-active-indicator-color: #00c07f !important;
+  --mdc-chip-elevated-container-color: #00c07f !important;
+  --mdc-chip-elevated-selected-container-color: #00c07f !important;
+  --mdc-chip-elevated-disabled-container-color: #00c07f !important;
+  --mdc-chip-flat-disabled-selected-container-color: #00c07f !important;
+  --mdc-radio-selected-focus-icon-color: #00c07f !important;
+  --mdc-radio-selected-hover-icon-color: #00c07f !important;
+  --mdc-radio-selected-icon-color: #00c07f !important;
+  --mdc-radio-selected-pressed-icon-color: #00c07f !important;
+  --mat-radio-checked-ripple-color: #00c07f !important;
+  --mdc-checkbox-selected-focus-icon-color: #00c07f !important;
+  --mdc-checkbox-selected-hover-icon-color: #00c07f !important;
+  --mdc-checkbox-selected-icon-color: #00c07f !important;
+  --mdc-checkbox-selected-pressed-icon-color: #00c07f !important;
+  --mdc-checkbox-selected-focus-state-layer-color: #00c07f !important;
+  --mdc-checkbox-selected-hover-state-layer-color: #00c07f !important;
+  --mdc-checkbox-selected-pressed-state-layer-color: #00c07f !important;
+  --mdc-checkbox-selected-checkmark-color: #053b29 !important;
+  --mdc-tab-indicator-active-indicator-color: #00c07f !important;
+  --mat-tab-header-active-label-text-color: #00c07f !important;
+  --mat-tab-header-active-ripple-color: #00c07f !important;
+  --mat-tab-header-inactive-ripple-color: #00c07f !important;
+  --mat-tab-header-active-focus-label-text-color: #00c07f !important;
+  --mat-tab-header-active-hover-label-text-color: #00c07f !important;
+  --mat-tab-header-active-focus-indicator-color: #00c07f !important;
+  --mat-tab-header-active-hover-indicator-color: #00c07f !important;
+  --mat-tab-header-with-background-background-color: #00c07f !important;
+  --mdc-text-button-label-text-color: #00c07f !important;
+  --mat-text-button-state-layer-color: #00c07f !important;
+  --mdc-filled-button-container-color: #00c07f !important;
+  --mdc-filled-button-label-text-color: #053b29 !important;
+  --mdc-protected-button-container-color: #00c07f !important;
+  --mdc-protected-button-label-text-color: #053b29 !important;
+  --mdc-outlined-button-label-text-color: #00c07f !important;
+  --mat-outlined-button-state-layer-color: #00c07f !important;
+  --mdc-icon-button-icon-color: #00c07f !important;
+  --mat-icon-button-state-layer-color: #00c07f !important;
+  --mdc-fab-container-color: #00c07f !important;
+  --mat-fab-foreground-color: #053b29 !important;
+  --mat-fab-state-layer-color: #053b29 !important;
+  --mdc-fab-small-container-color: #00c07f !important;
+  --mat-fab-small-foreground-color: #053b29 !important;
+  --mat-icon-color: #00c07f !important;
+  --mat-toolbar-container-background-color: #00c07f !important;
+  --mat-toolbar-container-text-color: #053b29 !important;
+  --mat-select-focused-arrow-color: rgba(0, 192, 127, 0.87) !important;
+  --mat-form-field-focus-select-arrow-color: rgba(0, 192, 127, 0.87) !important;
+}
+
+/* Dashboard toolbar, FAB action button and their icons are set with explicit
+ * declarations (background-color / color) instead of variables. */
+html .tb-dashboard-page .mat-toolbar.mat-primary,
+html .tb-dashboard-toolbar .mat-toolbar.mat-primary,
+html mat-fab-toolbar.mat-primary .mat-fab-toolbar-background {
+  background-color: #00c07f !important;
+  color: #053b29 !important;
+}
+
+html .tb-dashboard-page .mat-toolbar.mat-primary .mat-icon,
+html .tb-dashboard-page .mat-toolbar.mat-primary button,
+html .tb-dashboard-toolbar .mat-toolbar.mat-primary .mat-icon,
+html .tb-dashboard-toolbar .mat-toolbar.mat-primary button,
+html mat-fab-toolbar.mat-primary .mat-mdc-fab.mat-primary .mat-icon {
+  color: #053b29 !important;
+}
+
+html .tb-dashboard-page .mdc-fab.mat-primary,
+html .tb-dashboard-toolbar .mdc-fab.mat-primary {
+  background-color: #00c07f !important;
+  color: #053b29 !important;
+}

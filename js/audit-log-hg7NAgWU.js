@@ -1,0 +1,1 @@
+var e=`دفترچه های بازرسی`,t={createdTime:`زمان عمل`,userName:`کاربری عمل`,entityType:`نوع موجودیت`,entityName:`نام موجودی`,actionType:`نوع اقدام`,actionStatus:`وضعیت`,failureDetails:`جزئیات عدم موفقیت`},n={filter:{actionTypes:`انواع اقدامات`},detail:{title:`بازبینی جزئیات ثبت داده ها`}},r={menu:e,fields:t,features:n};export{r as default,n as features,t as fields,e as menu};

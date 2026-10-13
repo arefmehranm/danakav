@@ -1,0 +1,1 @@
+function e(e){return e?.getRootNode?.()}function t(t){return e(t)instanceof ShadowRoot}function n(n){return t(n)?e(n):null}export{n as t};

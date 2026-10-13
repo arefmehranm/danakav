@@ -1,0 +1,1 @@
+import{r as e}from"./request-FHh5M8oH.js";function t(){return e.get(`/2fa/settings`)}function n(t){return e.post(`/2fa/settings`,t)}export{n,t};

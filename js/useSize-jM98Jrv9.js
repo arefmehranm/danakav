@@ -1,0 +1,1 @@
+import{g as e}from"./runtime-core.esm-bundler--azUAgAR.js";import{n as t}from"./SizeContext-CfA_keEN.js";function n(n){let r=t();return e(()=>n?typeof n==`object`?n.value??r.value:typeof n==`function`?n(r.value):r.value:r.value)}export{n as t};

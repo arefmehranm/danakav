@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-hePW80VL.js";import{k as t,xt as n}from"./runtime-core.esm-bundler--azUAgAR.js";import{t as r}from"./use-form-node-BKSsoDUE.js";var i=t({__name:`validation-boundary`,setup(e,{expose:t}){return t({validate:r(()=>[],!0).validate}),(e,t)=>n(e.$slots,`default`)}}),a=e({default:()=>o}),o=i;export{a as n,o as t};
